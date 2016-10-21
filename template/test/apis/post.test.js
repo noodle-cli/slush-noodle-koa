@@ -2,7 +2,7 @@
 
 const chai = require('chai');
 const chaiAsPromised = require("chai-as-promised");
-const app = require('../../src/app');
+const app = require('../../src/app').listen();
 const request = require('supertest-as-promised')(app);
 const should = require('chai').should();
 
